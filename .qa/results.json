@@ -1,0 +1,64 @@
+{
+  "widths": [
+    {
+      "width": 375,
+      "scrollWidth": 360,
+      "brokenImages": [],
+      "missingAnchors": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 753,
+      "brokenImages": [],
+      "missingAnchors": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1425,
+      "brokenImages": [],
+      "missingAnchors": []
+    },
+    {
+      "width": 1920,
+      "scrollWidth": 1905,
+      "brokenImages": [],
+      "missingAnchors": []
+    }
+  ],
+  "errors": [],
+  "menu": {
+    "opened": true,
+    "closesOnLink": true,
+    "escape": true
+  },
+  "copy": [
+    {
+      "status": "Teléfono copiado: 669 804 635",
+      "value": "669804635"
+    },
+    {
+      "status": "Teléfono copiado: 669 804 635",
+      "value": "669804635"
+    }
+  ],
+  "telephones": [
+    "tel:+34669804635",
+    "tel:+34669804635",
+    "tel:+34669804635",
+    "tel:+34669804635",
+    "tel:+34669804635",
+    "tel:+34669804635"
+  ],
+  "photos": {
+    "count": 6,
+    "unique": 6,
+    "missingAlt": 0
+  },
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "Fontanería Londro",
+    "telephone": "+34669804635"
+  },
+  "reducedMotion": true
+}
