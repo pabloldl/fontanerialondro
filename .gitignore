@@ -2,3 +2,4 @@
 Thumbs.db
 .qa/chrome/
 *.log
+.qa/chrome-simple/

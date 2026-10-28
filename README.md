@@ -1,14 +1,20 @@
 # Fontanería Londro
 
-Landing local en HTML5, CSS3 y JavaScript vanilla. Abrir `index.html` con **Open with Live Server** en VS Code. Sin instalación, compilación, frameworks ni dependencias de ejecución. Todas las fotografías, estilos y scripts son locales.
+Web local en HTML5, CSS3 y JavaScript vanilla. Abrir `index.html` con Live Server. Sin dependencias, compilación ni despliegue.
 
-## Concepto y contenido
+## Simplificación
 
-Composición inspirada en un plano técnico: portada tipográfica de ancho completo, panorama anotado, presentación asimétrica, mosaico editorial y estudio de componentes escalonado. Paleta azul petróleo, cobre y superficies claras. Se revisaron las nueve landings existentes para evitar reproducir sus portadas y galerías. No se modificaron archivos de otros proyectos.
+Portada, servicios, presentación breve y contacto. Se conservan los colores azul y cobre y el símbolo provisional existente. Se eliminan el mosaico, el estudio de materiales, el contacto duplicado, la copia de teléfono, el menú desplegable y las animaciones de aparición. Dos fotografías locales, tipografía del sistema y barra fija de llamada en móvil con espacio para el área segura de iPhone.
 
-Los únicos datos comerciales utilizados son el nombre Fontanería Londro, su actividad de fontanería y el teléfono 669 804 635 (`tel:+34669804635`). No se afirman servicios específicos, horarios, ubicación, disponibilidad, garantías ni experiencia. No hay formulario, WhatsApp, mapa ni configuración de Netlify.
+Solo se anuncia fontanería en general. No se afirman especialidades, horarios, urgencias, experiencia, certificaciones, garantías ni cobertura fuera de Olvera. El teléfono se conserva y se contrasta con fuentes públicas. No se añaden formulario ni WhatsApp.
 
-El logotipo tipográfico y el símbolo de conexión son una **propuesta provisional original**, no una identidad oficial confirmada. El favicon reproduce esa propuesta.
+## Fuentes comerciales consultadas el 28 de octubre de 2026
+
+- Ayuntamiento de Olvera, revista de feria 2018: anuncio de Fontanería Londro con teléfono 669 804 635 y localidad Olvera (Cádiz). https://www.olvera.es/images/Servicios_Municipales/Feria/Revista_Feria_2018.pdf
+- Ayuntamiento de Olvera, revista de feria 2023: mismo negocio y teléfono. https://www.olvera.es/images/Servicios_Municipales/Feria/REVISTA__FERIA-SAN-AGUSTIN-2023.pdf
+- Directorio contemporáneo: sitúa Fontanería Londro en Olvera. https://www.fontaneroscadiz.es/fontaneria-de-urgencia
+
+No se deducen servicios de la categoría de una página de directorio. La dirección postal histórica y los correos, que difieren entre anuncios, no se publican. Olvera se muestra como localidad del negocio, sin afirmar un radio de desplazamiento. Se recomienda al visitante consultar disponibilidad y desplazamientos por teléfono.
 
 ## Fotografías y licencia
 
@@ -23,25 +29,11 @@ Las seis fotografías son ilustrativas: no muestran trabajos realizados por Lond
 | `img/valvula.webp` | Anastasia Latunova | https://www.pexels.com/photo/person-holding-a-metal-pipe-10246156/ |
 | `img/componentes.webp` | Nic Wood | https://www.pexels.com/photo/brass-plumbing-olive-compression-fittings-28179319/ |
 
-Descargas optimizadas en WebP desde el CDN de Pexels, con anchos de 1000, 1200 o 1920 px según su uso. Sin fotografías repetidas: seis archivos y seis imágenes distintas. Se comprobó que los identificadores no aparecían en los HTML y README de otros proyectos. Los encuadres se realizan con CSS; los originales no han sido generados por IA. Tipografía del sistema, sin solicitudes a servicios de fuentes.
+Descargas optimizadas en WebP desde el CDN de Pexels, con anchos de 1000, 1200 o 1920 px según su uso. La página simplificada utiliza únicamente ajuste-tuberias.webp y cobre.webp. Las otras cuatro fotografías se conservan como archivos disponibles, sin cargarse. Se comprobó que los identificadores no aparecían en los HTML y README de otros proyectos. Los encuadres se realizan con CSS; los originales no han sido generados por IA. Tipografía del sistema, sin solicitudes a servicios de fuentes.
 
-## Funcionalidad y accesibilidad
 
-Navegación por anclas; menú móvil con `aria-expanded`, cierre al navegar, al pulsar Escape y al pulsar fuera; enlaces de llamada; dos botones de copia con confirmación mediante región de estado y alternativa de copia local. Si el navegador bloquea ambas APIs, se muestra el número sin afirmar que se ha copiado. Sin JavaScript, la navegación y las llamadas siguen disponibles.
+## Accesibilidad y comprobaciones
 
-HTML semántico, un H1, textos alternativos, enlace para saltar al contenido, foco visible y respeto a `prefers-reduced-motion`. Las animaciones de aparición son de una sola ejecución. SEO: título, descripción, Open Graph y JSON-LD de tipo `Plumber` con nombre y teléfono únicamente. No se incluye un dominio ficticio; `og:image` utiliza la ruta local solicitada. La previsualización social externa requerirá una URL absoluta cuando exista un dominio confirmado.
+Enlaces telefónicos `tel:+34669804635`, navegación por anclas disponible sin JavaScript, un H1, textos alternativos, foco visible, enlace para saltar al contenido e iconos SVG. JavaScript únicamente actualiza el año. Se respeta movimiento reducido.
 
-## Verificación realizada
-
-Se ejecutó `node --check js/script.js` y una comprobación con Chrome headless mediante su protocolo de depuración. El script opcional `.qa/check.cjs` utiliza únicamente módulos nativos de Node y el Chrome instalado en Windows; no es parte de la web ni se necesita para Live Server.
-
-- Capturas completas en 375, 768, 1440 y 1920 px: `.qa/375.png`, `.qa/768.png`, `.qa/1440.png`, `.qa/1920.png`.
-- En los cuatro tamaños: sin desbordamiento horizontal, imágenes rotas ni anclas sin destino.
-- Menú móvil: apertura, cierre mediante enlace y Escape con devolución del foco.
-- Los dos botones de copia escriben exactamente `669804635`, comprobado leyendo el portapapeles en Chrome.
-- Los seis enlaces telefónicos utilizan exactamente `tel:+34669804635`. No se realizó ninguna llamada real ni se probó un dispositivo telefónico.
-- Seis fotografías únicas con texto alternativo; sin errores de ejecución JavaScript ni errores de recursos registrados.
-- Movimiento reducido: desplazamiento automático, sin animaciones ni transiciones.
-- Resultados medidos en `.qa/results.json`.
-
-Se revisaron visualmente las capturas. La comprobación se realizó con Chrome de escritorio y tamaños de viewport simulados; no sustituye pruebas en dispositivos físicos ni una auditoría completa con lector de pantalla.
+Verificación completada: sintaxis de JavaScript, destinos de anclas, existencia de recursos locales, dos imágenes, un H1, JSON-LD y enlaces telefónicos. Resultados en `.qa/simplification-results.json`. La prueba visual con `.qa/check.cjs` no pudo conectarse al puerto de depuración de Chrome y se interrumpió. Las capturas y results.json anteriores corresponden al diseño anterior. Queda pendiente comprobar visualmente en navegador, Safari e iPhone físico.

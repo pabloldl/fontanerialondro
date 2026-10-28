@@ -1,0 +1,21 @@
+{
+  "missingAnchors": [],
+  "missingAssets": [],
+  "phoneLinks": 6,
+  "allPhoneLinksCorrect": true,
+  "images": 2,
+  "h1": 1,
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "Fontanería Londro",
+    "telephone": "+34669804635",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Olvera",
+      "addressRegion": "Cádiz",
+      "addressCountry": "ES"
+    }
+  },
+  "browserQA": "No completada: Chrome no expuso el puerto de depuraci?n. Capturas y results.json anteriores pertenecen al dise?o anterior."
+}
